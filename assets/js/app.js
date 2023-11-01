@@ -29,6 +29,7 @@ $('.slider-1').slick({
             breakpoint: 992,
             settings: {
                 slidesToShow: 1.65,
+                dots: true,
                 speed: 1000,
                 autoplay: true,
                 infinite: true,
@@ -41,44 +42,6 @@ $('.slider-1').slick({
     ]
 });
 
-$('.slider-3').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1.6,
-    centermode: true,
-    centerPadding: 100,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-
-        {
-            breakpoint: 992,
-            settings: {
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1.6,
-                arrows: false,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                arrows: false,
-                slidesToScroll: 1,
-            }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
 $('.slider-2').slick({
     infinite: true,
     autoplay: true,
@@ -89,17 +52,7 @@ $('.slider-2').slick({
     centerPadding: '400px',
     arrows: false,
     responsive: [
-        {
-            breakpoint: 1350,
-            settings: {
-                centerMode: true,
-                centerPadding: '300px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-            }
-        },
+
         {
             breakpoint: 1200,
             settings: {
@@ -115,6 +68,17 @@ $('.slider-2').slick({
             breakpoint: 1024,
             settings: {
                 centerMode: true,
+                centerPadding: '300px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                centerMode: true,
                 centerPadding: '200px',
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -122,7 +86,6 @@ $('.slider-2').slick({
                 dots: false,
             }
         },
-
         {
             breakpoint: 600,
             settings: {
@@ -141,3 +104,31 @@ $('.slider-2').slick({
     ]
 }
 );
+$('.slider3').slick({
+    autoplay: false,
+    centerMode: true,
+    centerPadding: '270px',
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                infinite: true,
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: "200px",
+            }
+        },
+        {
+            breakpoint: 850,
+            settings: {
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+            }
+        },
+    ]
+});
